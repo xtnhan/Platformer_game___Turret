@@ -1,5 +1,5 @@
 float gravity = 0.4;
-float obspeedX = 6; //Speed of all the objects in this game
+float obspeedX = 7; //Speed of all the objects in this game
 float BgQuantity = 1;
 float BgX = 2404;
 float w;
@@ -84,7 +84,6 @@ void setup() {
 
   bgr1.add(new BG1 (0)); //Original BG
 }
-
 
 void draw() {
   //background(255, 255, 255);
@@ -244,7 +243,7 @@ void update() {
     removeBulletPlayer();
   }
 
-  if (ebullets.size() >= 300) { // Bug - Lag - Fixed
+  if (ebullets.size() >= 400) { // Bug - Lag - Fixed
     removeBulletEnemy();
   }
 
@@ -322,12 +321,12 @@ void keyPressed () {
 
 
 void removeBulletPlayer() {
-  for (int i = bullets.size()-199; i >= 99; i-=1) { // Bug - Lag - Fixed
+  for (int i = bullets.size()-11; i >= 99; i-=1) { // Bug - Lag - Fixed
     bullets.remove(i);
   }
 }
 void removeBulletEnemy() {
-  for (int i = ebullets.size()-299; i >= 199; i-=1) { // Bug - Lag - Fixed
+  for (int i = ebullets.size()- 199; i >= 299; i-=1) { // Bug - Lag - Fixed
     ebullets.remove(i);
   }
 }

@@ -34,7 +34,7 @@ class EnemyBullet {
     s = 6;
 
     blockDamage = 1;
-    playerDamage = 2.5;
+    //playerDamage = 2.5;
     direction = new PVector (0, 0);
   }
 
