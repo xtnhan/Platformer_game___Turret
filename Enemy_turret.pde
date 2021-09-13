@@ -5,7 +5,7 @@ class TargetTurret {
   float s;
   float timer;
 
-  float healthbar = 1;
+  float healthbar = 100;
 
 
 

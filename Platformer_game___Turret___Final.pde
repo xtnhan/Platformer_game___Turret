@@ -239,7 +239,7 @@ void update() {
 
 
   //Remove Bullet - condition
-  if (bullets.size() >= 200) { // Bug - Lag - Fixed
+  if (bullets.size() >= 400) { // Bug - Lag - Fixed
     removeBulletPlayer();
   }
 
@@ -321,12 +321,12 @@ void keyPressed () {
 
 
 void removeBulletPlayer() {
-  for (int i = bullets.size()-11; i >= 99; i-=1) { // Bug - Lag - Fixed
+  for (int i = bullets.size()- 199; i >= 99; i-=1) { // Bug - Lag - Fixed
     bullets.remove(i);
   }
 }
 void removeBulletEnemy() {
-  for (int i = ebullets.size()- 199; i >= 299; i-=1) { // Bug - Lag - Fixed
+  for (int i = ebullets.size()- 199; i >= 99; i-=1) { // Bug - Lag - Fixed
     ebullets.remove(i);
   }
 }
